@@ -1,0 +1,24 @@
+\begin{columns}[T]
+	\begin{column}[T]{0.45\textwidth}
+		\begin{tabular}{c|c|p{1cm}|p{1cm}|c|}
+
+			\multicolumn{2}{c|}{\multirow{2}{*}{}} & \multicolumn{2}{c|}{Predicted Class} &                                           \\\cline{3-4}
+			\multicolumn{2}{c|}{}                  & $C_1$                                & $\neg C_1$  & Total                       \\\hline
+			\multirow{2}{*}{True Class}            & $C_1$                                & \textbf{TP} & \textbf{FN}    & \textbf{P} \\\cline{2-4}
+			                                       & $\neg C_1$                           & \textbf{FP} & \textbf{TN}    & \textbf{N} \\\hline
+			\multicolumn{2}{r|}{Total}             & \textbf{P'}                          & \textbf{N'} & \textbf{P + N}
+		\end{tabular}
+
+	\end{column}
+
+	\begin{column}[T]{0.5\textwidth}
+		\footnotesize
+		\begin{itemize}
+			\item \textbf{True Positives (TP)} = correctly classified tuples.
+			\item \textbf{True Negatives (TN)} = correctly classified tuples.
+			\item \textbf{False Positives (FP)} = negative tuples incorrectly classified as positive.
+			\item \textbf{False Negatives (FN)} = positive tuples incorrectly classified as negative.
+		\end{itemize}
+		% REVIEW: I have already added the abbreviations TP, FN, FP and TN to the legend, but strictly speaking an introduction of P, N, P' and N' is still missing. Since I believe that the slides would be finally overloaded if a legend for them is added, I skip the introduction for the time being, and just leave you a note on this.
+	\end{column}
+\end{columns}

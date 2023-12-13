@@ -1,0 +1,2 @@
+# PRODATO Machine Learning Community: Decision Tree
+This ML Community is based on [exercise 4 of KDD](https://github.com/FAU-CS6/KDD/tree/cab932b3236c4186928eb0d943df42d188230c03).

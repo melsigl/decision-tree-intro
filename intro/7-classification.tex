@@ -1,0 +1,37 @@
+\ifx\pdfminorversion\undefined\else\pdfminorversion=4\fi
+\documentclass[aspectratio=169,t, table]{beamer}
+%\documentclass[aspectratio=169,t,handout]{beamer}
+
+\input{x-additional/preamble}
+\setbeamercovered{invisible}
+\usepackage[linesnumbered]{algorithm2e}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{faucyan}{#1}}
+\SetCommentSty{mycommfont}
+\usepackage{multirow}
+\usepackage{array}
+
+% Title, authors, and date
+\title[ML Community]{Decision Tree} %
+
+\input{x-additional/mbs.tex}
+\input{x-additional/get_git_rev.tex}
+
+
+% Set additional logo (overwrites FAU seal)
+%\logo{\includegraphics[width=.15\textwidth]{themefau/art/xxx/xxx.pdf}}
+\begin{document}
+% Title
+\maketitle
+
+{ % Outline
+	\setbeamertemplate{footline}{}
+	\begin{frame}[noframenumbering]{Outline}
+		\tableofcontents
+
+	\end{frame}
+}
+
+% Body
+\input{7-classification/2-decision-tree}
+
+\end{document}
